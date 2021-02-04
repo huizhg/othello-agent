@@ -1,0 +1,16 @@
+/**
+ * This interface defines the mandatory methods for an evaluator, i.e., a class
+ * that can take a position and return an integer value that represents a
+ * heuristic evaluation of the position (position numbers if the position
+ * is better for the first  player, white). Notice that an evaluator is not supposed
+ * to make moves in the position to 'see into the future', but only evaluate the static
+ * features of the position.
+ *
+ * @author Henrik Bj@ouml;riklund
+ */
+
+public interface OthelloEvaluator {
+    /** Returns an integer, representing a heuristic evaluation of the position. */
+    public int evaluate(OthelloPosition position);
+
+}
